@@ -1,117 +1,232 @@
-# Rekrutmen-Data-Analyst-Seara-Bank-2026
-# Overview
+# 📊 SearaBank Talent Recruitment Analysis
+
+> **Disclaimer**  
+> The company name **SearaBank** and the associated business scenario used in this project are entirely fictional and created for educational purposes as part of a structured case study. Any resemblance to actual companies, institutions, or datasets is purely coincidental.
+
+## 👥 Team
+
+This project was developed as part of a collaborative data analytics case study by **Group 6** from the **Seara Data** community.
+
+- Syaid El Hasyim
+- Muhammad Reyhan Merciano
+- Ainayah
+- Azyhra Dinda
 
 ---
 
-!images (3).jpg.jpg)
+# 📌 Project Overview
 
-## Outline Overview Project :
-- Business Understanding
-- Result Summary of The Project
-- Key Takeaways
-- Process
-- More Insights / Recommendation Business
-- The Project
+Recruitment is one of the most critical processes in a rapidly growing digital bank. As hiring demand increases, manual resume screening becomes inefficient and makes it difficult for HR teams to identify candidates who match specific technical requirements.
 
-## Business Understanding
+This project analyzes recruitment data from **SearaBank**, a fictional digital banking company, to build a **data-driven recruitment dashboard** that helps HR identify qualified candidates based on technical skills, experience level, recruitment channels, and geographic distribution.
 
----
+The project covers the complete analytics workflow, including:
 
-- Problem:
-    
-    Dalam proses rekrutmen Data Analyst di SearaBank, perusahaan menghadapi tantangan dalam memahami kesiapan kandidat terhadap kebutuhan teknis yang spesifik, terutama pada kompetensi Excel, SQL, Python, dan BI tools.
-    
-    Selain itu, belum terdapat pemetaan yang jelas mengenai:
-    
-    - Kesesuaian skill kandidat dengan kebutuhan tiap posisi (Junior vs Senior)
-    - Distribusi kemampuan teknis antar Fresh Graduate dan Experienced
-    - Efektivitas channel rekrutmen dan sebaran talent pool
-    
-    Hal ini menyebabkan proses screening belum sepenuhnya berbasis data dan masih membutuhkan optimasi untuk meningkatkan efisiensi rekrutmen.
-    
-- Objective:
-    - Menganalisis distribusi kompetensi teknis kandidat (SQL, Python, Excel, BI tools)
-    - Memetakan kesiapan kandidat terhadap kebutuhan posisi Junior dan Senior Data Analyst
-    - Mengidentifikasi segmentasi kandidat berdasarkan level pengalaman
-    - Menganalisis sumber kandidat dan persebaran geografis
-    - Memberikan rekomendasi strategi rekrutmen berbasis data
-- Business Question:
-    - Bagaimana distribusi kompetensi teknis kandidat terhadap kebutuhan tools perusahaan?
-    - Di platform BI mana kandidat potensial paling banyak ditemukan?
-    - Apakah Fresh Graduate mampu bersaing dengan Experienced dalam kompetensi SQL dan Python?
-    - Bagaimana distribusi kandidat berdasarkan domisili dan sumber informasi lowongan?
-    - Segmen kandidat mana yang paling siap untuk kebutuhan Junior dan Senior role?
-
-## Result Summary of The Project
+- Data cleaning
+- Data transformation
+- Exploratory Data Analysis (EDA)
+- Interactive dashboard development
 
 ---
 
-- Total kandidat: **681 orang**
-- Fresh Graduate: **56,7% (386 kandidat)**
-- Experienced: **43,3%**
+# 🎯 Business Problem
 
-### Temuan Utama:
+SearaBank plans to expand its workforce in 2026 to support the growth of its flagship products:
 
-- SQL (561), Python (546), dan Excel (527) menjadi skill paling dominan
-- BI tools seperti Tableau dan Looker Studio masih lebih rendah dibanding tools hulu
-- Kombinasi **Excel + Tableau** paling banyak dimiliki kandidat Junior (224 kandidat)
-- Terdapat ±300 Fresh Graduate yang memenuhi kualifikasi awal posisi Senior (SQL & Python)
-- 80,6% kandidat berasal dari LinkedIn
-- Kandidat terkonsentrasi di Jawa Barat, DKI Jakarta, Jawa Timur, dan Jawa Tengah
+- Seara Hub Pockets
+- Seara Smart-PayLater
 
-## Key Takeaways
+However, the HR team faces several challenges:
 
----
+- Manual resume screening is time-consuming.
+- Candidate skills are difficult to compare objectively.
+- Recruitment decisions are not yet fully data-driven.
+- Talent distribution across BI tools and programming skills is unclear.
 
-### Apa yang dipelajari?
+### Recruitment Requirements
 
-- Talent pool Fresh Graduate sangat besar dan kompetitif
-- Skill SQL dan Python tidak hanya dimiliki oleh experienced candidate
-- BI tools menjadi skill gap utama untuk kebutuhan tertentu
-- LinkedIn merupakan channel rekrutmen paling efektif
-- Persebaran kandidat masih terpusat di wilayah urban
-
-### Tantangan:
-
-- Perbedaan skill antar tools hulu (SQL, Python) vs hilir (BI tools)
-- Kebutuhan Junior dan Senior memiliki karakteristik kompetensi yang berbeda
-- Tidak semua kandidat BI-ready meskipun memiliki Excel dasar
-- Segmentasi kandidat perlu lebih presisi untuk efisiensi hiring
-
-### Yang bisa ditingkatkan:
-
-- Penambahan scoring system untuk kandidat (skill-based ranking)
-- Automasi screening berbasis rule engine (SQL/Python threshold)
-- Penguatan talent pipeline untuk BI tools (Power BI & Looker Studio)
-- Optimasi sourcing di luar LinkedIn untuk diversifikasi talent pool
-
-## Process
+| Position | Headcount | Required Skills |
+|-----------|----------:|----------------|
+| Senior Credit Risk Analyst | 1 | SQL, Python |
+| Junior Data Analyst (PayLater) | 1 | Excel + BI Tools |
+| Junior Data Analyst (Pockets) | 2 | Excel + BI Tools |
 
 ---
 
-- Pengumpulan data rekrutmen internal SearaBank (681 kandidat)
-- Data understanding (profil kandidat, skill, motivasi, sumber, domisili)
-- Data cleaning:
-    - Standarisasi teks (PROPER, REGEXREPLACE)
-    - Penghapusan duplikasi data
-    - Handling missing value
-- Data transformation:
-    - Kategorisasi domisili (IF + VLOOKUP)
-    - Encoding skill menjadi binary (IF + REGEXMATCH)
-    - Pivot table untuk summary data
-- Exploratory Data Analysis (EDA):
-    - Analisis distribusi kandidat
-    - Analisis kompetensi teknis
-    - Analisis kombinasi skill
-    - Analisis motivasi & sumber rekrutmen
-- Visualisasi dashboard menggunakan Google Looker Studio
+# 🎯 Project Objectives
 
-## More Insights / Recommendation Business
+This project aims to:
+
+- Analyze candidate technical competencies.
+- Map candidate readiness for Junior and Senior Data Analyst positions.
+- Compare Fresh Graduate and Experienced candidate capabilities.
+- Analyze recruitment sources and candidate demographics.
+- Support HR with data-driven recruitment recommendations.
 
 ---
 
-- Prioritaskan kandidat Junior untuk kombinasi **Excel + Tableau** karena supply paling besar
-- Untuk posisi Junior Squad Pockets, perlu strategi khusus karena kandidat Power BI dan Looker Studio lebih terbatas
-- Gunakan SQL & Python sebagai filtering awal untuk posisi Senior Credit Risk Analyst
-- Fresh Graduate dengan performa tinggi dapat dimasukkan ke **talent pipeline Senior development**
-- LinkedIn tetap menjadi channel utama, namun perlu diversifikasi sourcing untuk memperluas talent pool
+# ❓ Business Questions
+
+- Which BI platform has the largest pool of qualified Junior candidates?
+- Are Fresh Graduates competitive with Experienced candidates in SQL and Python?
+- Which recruitment channel contributes the most applicants?
+- How are candidates distributed geographically?
+- Which candidate segments best fit Junior and Senior roles?
+
+---
+
+# 🛠 Tech Stack
+
+| Category | Tools |
+|----------|-------|
+| Data Cleaning | Google Sheets |
+| Data Transformation | Google Sheets |
+| Data Visualization | Looker Studio |
+
+---
+
+# 🔄 Project Workflow
+
+## 1. Data Cleaning
+
+- Replaced missing values with "-"
+- Removed duplicate records
+- Standardized text formatting
+- Grouped candidate locations into provinces
+
+---
+
+## 2. Data Transformation
+
+Performed feature engineering by transforming multi-response text fields into structured boolean features.
+
+Techniques used:
+
+- `IF`
+- `REGEXMATCH`
+- `REGEXREPLACE`
+- `VLOOKUP`
+
+---
+
+## 3. Exploratory Data Analysis
+
+Analyzed:
+
+- Candidate demographics
+- Technical skills
+- Recruitment channels
+- Candidate motivations
+- Geographic distribution
+
+---
+
+## 4. Dashboard Development
+
+Built an interactive recruitment dashboard in **Looker Studio** to support data-driven hiring decisions.
+
+---
+
+# 📈 Project Results
+
+## Candidate Overview
+
+- Total Candidates: **681**
+- Fresh Graduates: **386 (56.7%)**
+- Experienced: **295 (43.3%)**
+
+---
+
+## Technical Skills
+
+Most common technical skills:
+
+| Skill | Candidates |
+|--------|-----------:|
+| SQL | 561 |
+| Python | 546 |
+| Excel | 527 |
+
+### BI Tools
+
+| BI Tool | Candidates |
+|---------|-----------:|
+| Power BI | 516 |
+| Tableau | 446 |
+| Looker Studio | 401 |
+
+---
+
+## Recruitment Sources
+
+- **80.6%** of applicants came from **LinkedIn**, making it the most effective recruitment channel.
+
+---
+
+## Geographic Distribution
+
+Most applicants are concentrated in:
+
+- West Java
+- DKI Jakarta
+- East Java
+- Central Java
+
+---
+
+# 💡 Key Insights
+
+### 1. Strong Fresh Graduate Talent Pool
+
+Fresh Graduates account for more than half of all applicants (56.7%), indicating a highly competitive entry-level talent market.
+
+---
+
+### 2. SQL & Python are Highly Common
+
+SQL and Python are the two most frequently mastered technical skills among applicants.
+
+Interestingly, around **300 Fresh Graduates** already satisfy the initial SQL & Python requirements for Senior-level screening.
+
+---
+
+### 3. Tableau Dominates Junior Candidate Skills
+
+Among candidates meeting Junior Analyst requirements:
+
+- Excel + Tableau dominates (224 candidates)
+- Excel + Power BI is significantly smaller
+- Excel + Looker Studio has the smallest talent pool
+
+---
+
+### 4. LinkedIn is the Primary Recruitment Channel
+
+More than 80% of applicants were sourced from LinkedIn, highlighting its effectiveness for digital talent acquisition.
+
+---
+
+# 📊 Business Recommendations
+
+## Junior Data Analyst Recruitment
+
+- Prioritize candidates with **Excel + Tableau** since they represent the largest qualified talent pool.
+- Fast-track candidates with **Power BI** and **Looker Studio** due to limited availability.
+
+---
+
+## Senior Credit Risk Analyst Recruitment
+
+- Use **SQL** and **Python** as primary screening criteria.
+- Although many Fresh Graduates meet technical requirements, prioritize Experienced candidates during final interviews because the role requires stronger business context and risk management experience.
+
+---
+
+## Talent Pipeline Strategy
+
+- Develop a Senior Talent Pipeline by nurturing high-performing Fresh Graduates.
+- Expand sourcing efforts beyond LinkedIn to diversify candidate acquisition channels.
+
+---
+
+
