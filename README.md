@@ -220,4 +220,14 @@ More than 80% of applicants were sourced from LinkedIn, highlighting its effecti
 
 ---
 
+# 📌 Dashboard
+
+> <img width="1875" height="1407" alt="SearaBank-Talent-Recruitment-Dashboard-2026" src="https://github.com/user-attachments/assets/c92ddea1-e99e-4609-9409-7cb4bdb5cf15" />
+
+
+```
+images/dashboard.png
+```
+
+---
 
