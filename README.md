@@ -3,15 +3,6 @@
 > **Disclaimer**  
 > The company name **SearaBank** and the associated business scenario used in this project are entirely fictional and created for educational purposes as part of a structured case study. Any resemblance to actual companies, institutions, or datasets is purely coincidental.
 
-## 👥 Team
-
-This project was developed as part of a collaborative data analytics case study by **Group 6** from the **Seara Data** community.
-
-- Syaid El Hasyim
-- Muhammad Reyhan Merciano
-- Ainayah
-- Azyhra Dinda
-
 ---
 
 # 📌 Project Overview
